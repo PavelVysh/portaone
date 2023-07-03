@@ -42,7 +42,7 @@ public class Main {
         return chars;
     }
 
-    public static char getUniqueChar(List<Character> chars) {
+    public static Character getUniqueChar(List<Character> chars) {
         Map<Character, Integer> countChars = new HashMap<>();
         for (char c : chars) {
             countChars.put(c, countChars.getOrDefault(c, 0) + 1);
@@ -52,7 +52,7 @@ public class Main {
                 return c;
             }
         }
-        return '@';
+        return null;
     }
 
 }
